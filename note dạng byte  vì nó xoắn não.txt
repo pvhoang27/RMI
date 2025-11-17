@@ -1,11 +1,11 @@
-dạng byte khá là xoắn não 
+*****dạng byte khá là xoắn não 
 sv sẽ gửi cho ta về mảng byte 
 và ta cũng sẽ gửi lại kết quả cho sv là 1 mảng byte 
 
 // note 
 ghi sv gửi ta 1 mảng byte mà ta nhận về 
 nếu ta chuỗi sang String
-
+code
  byte[] a = sv.requestData(studentCode, qCode);
         System.out.println(a);
         System.out.println(Arrays.toString(a));
@@ -39,20 +39,20 @@ Trả về:
 ✔ Nội dung trong String là các ký tự tương ứng với mã ASCII của byte
 
 
-oke sau khi xu ly xong bai toan , ta can chuyen ket qua thanh dang byte de gui cho sv thi gap cac truong hop sau
-Kết quả là STRING  → result.getBytes()
+**oke sau khi xu ly xong bai toan , ta can chuyen ket qua thanh dang byte de gui cho sv thi gap cac truong hop sau
+*Kết quả là STRING  → result.getBytes()
 	byte[] data = result.getBytes();
 	sv.submitData(studentCode, qCode, data);
 
 
-Kết quả là INT     → String.valueOf(x).getBytes()
+*Kết quả là INT     → String.valueOf(x).getBytes()
 	int x = 12345;
 	String result = String.valueOf(x);    // "12345"
 	byte[] data = result.getBytes();      // thành [49,50,51,52,53]
 	sv.submitData(studentCode, qCode, data);
 có thể thấy là ta cần phải chuyển int sang string rồi string -> byte
 
-Kết quả là CHAR    → String.valueOf(c).getBytes()
+*Kết quả là CHAR    → String.valueOf(c).getBytes()
 1 chữ
 	char c = 'A';
 	String result = String.valueOf(c);
@@ -63,7 +63,9 @@ Kết quả là CHAR    → String.valueOf(c).getBytes()
 	String result = new String(arr);  // "ABC"
 	byte[] data = result.getBytes();
 	sv.submitData(studentCode, qCode, data);
-Kết quả là ARRAY ,... ((mảng int, list…))   → ghép thành String → getBytes()
+
+
+*Kết quả là ARRAY ,... ((mảng int, list…))   → ghép thành String → getBytes()
 int[] arr = {1, 3, 5};
 
 String result = "";
