@@ -29,6 +29,8 @@
 // phải nói là ai làm ra cái đề này , thực sự là tệ luôn , đề bài ko rõ ràng ,phần class thì ghi sai chữ hoa chữ thường
 // câu này thứ nhất chuyển mã thành chữ hoa là chuyển code chứ ko phải chuyển id
 // thứ 2 , *0,2 là 0,2 của importPrice
+// thu 3 la  cau nay de y de bai la chu i vs e  trong importPrice vs exportPricela viet thuong nhe , de bai .. 
+
 package Object;
 import RMI.ObjectService;
 import RMI.Product;
@@ -46,15 +48,16 @@ public class B21DCCN550_qaFQfIxY_CapNhatGiaProduct {
         ObjectService sv = (ObjectService) rg.lookup("RMIObjectService");
         Product product = (Product) sv.requestObject(studentCode, qCode);
         System.out.println(product);
-        
+        // thu 3 la  cau nay de y de bai la chu i vs e  trong importPrice vs exportPricela viet thuong nhe , de bai ..
         double exportP = product.getExportPrice();
         double importP = product.getImportPrice();
-        
+        // thứ 2 , *0,2 là 0,2 của importPrice
         double newExport =  (double) importP + 0.2 * importP ;
         // nhớ là phải làm tròn 2 chữ số sau số thập phân
         newExport = (double) Math.round(newExport * 100) / 100;
         System.out.println(newExport);
         product.setExportPrice(newExport);
+        // câu này thứ nhất chuyển mã thành chữ hoa là chuyển code chứ ko phải chuyển id
         String code = product.getCode();
         String newCode = code.toUpperCase();
         System.out.println(newCode);

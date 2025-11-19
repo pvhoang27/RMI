@@ -11,6 +11,7 @@ import java.io.*;
 public class Product implements Serializable{
     private static final long serialVersionUID = 20151107L;
     private String id , code;
+    // cau nay de y de bai la chu i vs e  trong importPrice vs exportPricela viet thuong nhe , de bai .. 
     private double importPrice,exportPrice;
     
     public Product() {
