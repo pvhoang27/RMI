@@ -40,7 +40,7 @@ public class PhepXor {
         byte[] kq = new byte[a.length];
         byte[] keyGoc = "PTIT".getBytes();
         byte[] keyMoi = new  byte[a.length];
-        // vì là key gốc bị thọt 1 kí tự nên cần lặp lại để nó = kí tự thì mới xor dc 
+        // vì là key gốc bị thọt vài kí tự nên cần lặp lại để nó = kí tự thì mới xor dc 
         for(int i = 0 ; i < a.length; i++){
             keyMoi[i] =keyGoc[i % keyGoc.length];
         }
