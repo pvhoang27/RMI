@@ -1,4 +1,4 @@
-package Data;
+    package Data;
 
 //[Mã câu hỏi (qCode): sD8np9CE].  Một chương trình (tạm gọi là RMI Server) cung cấp giao diện cho phép triệu gọi từ xa để xử lý dữ liệu.
 //Giao diện từ xa:
