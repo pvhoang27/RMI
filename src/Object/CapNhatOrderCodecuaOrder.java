@@ -29,7 +29,7 @@ import RMI.ObjectService;
 import RMI.Order;
 import java.rmi.*;
 import java.rmi.registry.*;
-public class CapNhatOrderCode {
+public class CapNhatOrderCodecuaOrder {
     public static void main(String[] args) throws Exception{
         String studentCode = "B21DCCN120",qCode = "YqzGvpCt"; 
         Registry rg = LocateRegistry.getRegistry("203.162.10.109");

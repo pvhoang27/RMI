@@ -19,7 +19,7 @@ import RMI.CharacterService;
 import java.rmi.*;
 import java.rmi.registry.*;
 
-public class DemTanSuatKyTu2_KhoHon {
+public class DemTanSuatKyTu2_DaiHon {
     public static void main(String[] args) throws Exception{
         String studentCode = "B17DCCN043", qCode = "7rpSgi5S" ;
         Registry rg = LocateRegistry.getRegistry("203.162.10.109");
